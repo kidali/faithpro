@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>CI System</title>
+<link href="jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.5.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+</head> 
+<style type="text/css">
+.cont{
+  width:70px;	
+  padding-right:10px;
+}
+
+h1{
+font-family:Nexa Light;
+}
+
+span{
+font-family:Gabriela;
+}
+</style>
+<body> 
+
+<div data-role="page" id="page" data-theme="a">
+	<div data-role="header">
+		<h1>CI System</h1>
+	</div>
+	<div data-role="content">	
+    <div class="cont">
+    
+    <img src="img/logo.png"/>
+    
+    </div>
+    
+    <nav data-role="navbar">
+		<ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#report" data-icon="grid">Report</a></li>
+			<li><a href="#info" data-icon="info">Info</a></li>
+		</ul>		
+        </nav>
+	</div>
+	<div data-role="footer">
+		<h4>&copy; 2014</h4>
+	</div>
+</div>
+
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header">
+		<h1>Immunization entry</h1>
+	</div>
+	<div data-role="content">	
+    <div id="topMenu">
+    <nav data-role="navbar">
+<ul>
+<li><a href="#page" data-icon="back" class="ui-btn-active">Back</a></li>
+<li><a href="#page" data-icon="grid">Home</a></li>
+<li><a href="#" data-icon="alert">Notices
+ 
+</a></li>
+<li><a href="#info" data-icon="info">Info</a></li>
+<li><a href="#report" data-icon="contact">Report</a></li>
+</ul>
+
+</nav>
+
+</div>
+ 
+<br/>
+        <label>Parent Name*</label>
+   <input type="text" name="parentname" placeholder="parent name">
+   <label>Child Name*</label>
+   <input type="text" placeholder="child name" name="cname">
+    <label>Birth Date*</label>
+   <input type="text" placeholder="Birth date" name="date">
+    <label>County*</label>
+	<input type="text" placeholder="county" name="count">
+	 <label>Disease*</label>
+   <input type="text" placeholder="disease" name="disease">
+   
+   <label>Immunization Type*</label>
+   <input type="text" placeholder="immunization type" name="subject">
+    <label>Immunization Date*</label>
+   <input type="text" placeholder="immunization date" name="pname">
+     <label>Comment*</label>
+   <textarea name="comment" ></textarea><hr>
+   
+   <input type="text" placeholder="practitioner ID" name="pID">
+   <input type="submit" name="send" value="Send Details">
+   <input type="reset" name="cance" value="Abort">
+         
+        </div>	
+      
+	<div data-role="footer">
+		<h4>&copy; 2014</h4>
+	</div>
+</div>
+
+<div data-role="page" id="report" data-theme="a">
+
+	<div data-role="header">
+       	<h1 style="font-family:Gabriela">Escalate Issue</h1>
+      <a href="#page" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="back" data-theme="e">back</a>
+	</div>
+	<div data-role="content">	
+   <label>Full Name</label>
+   <input type="text" name="fullname">
+   <label>Practitioner ID</label>
+   <input type="text" name="pid">
+   <label>Subject</label>
+   <input type="text" name="subject">
+   <label>Description</label>
+   <textarea name="description" ></textarea>
+   <input type="submit" name="send" value="Escalate">
+   <input type="reset" name="cance" value="Abort">
+	</div>
+	<div data-role="footer">
+		<h4>&copy;2014</h4>
+	</div>
+</div>
+
+<div data-role="page" id="info" data-theme="a">
+
+	<div data-role="header">
+		
+       	<h1 style="font-family:Gabriela">About</h1>
+      <a href="#page" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="back" data-theme="e">back</a>
+	</div>
+	<div data-role="content">	
+    <span><center>This computer information system seeks to enhance immunization service delivery through improved data collection, quality storage and use through a computer based registry.
+
+The system greatly simplifies immunization reporting and monthly planning, which formerly required nurses to record each vaccination manually. It has also made records more accurate, timely, and transparent, which allows health workers and managers to better understand which children are not being immunized and why. CIS also manages the stock of vaccines and consumables, which allows the Ministry of Health to monitor the expiry date, distribution, and usage of ever more expensive vaccines. By linking the vaccine lots to the individual child records, lots can be traced through the stores and eventually to any children who have received a dose from a particular lot.
+<hr><span style="color:red">author:Faith</span>  
+  </center></span>
+	</div>
+	<div data-role="footer">
+		<h4>&copy;2014</h4>
+	</div>
+</div>
+
+
+</body>
+</html>
